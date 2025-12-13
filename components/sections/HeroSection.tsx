@@ -5,8 +5,8 @@ import Image from 'next/image'
 
 export const HeroSection = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-dark-900 to-dark-800 pt-20">
-      <div className="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-dark-900 to-dark-800 pt-16 sm:pt-20">
+      <div className="container mx-auto px-4 py-8 sm:py-16 flex flex-col md:flex-row items-center">
         <motion.div
           className="md:w-1/2 mb-12 md:mb-0"
           initial={{ opacity: 0, x: -50 }}
