@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 17, 24, 39; /* dark-900 */
+  --primary-rgb: 245, 158, 11; /* gold-500 */
+  --secondary-rgb: 16, 185, 129; /* emerald-500 */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb));
+}
+
+/* Custom scrollbar for luxury feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(30, 41, 59); /* dark-800 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--primary-rgb));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706; /* primary-600 */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Luxury text gradients */
+  .text-gold {
+    color: rgb(var(--primary-rgb));
+  }
+
+  .text-emerald {
+    color: rgb(var(--secondary-rgb));
+  }
+
+  .bg-gold {
+    background-color: rgb(var(--primary-rgb));
+  }
+
+  .bg-emerald {
+    background-color: rgb(var(--secondary-rgb));
+  }
+}

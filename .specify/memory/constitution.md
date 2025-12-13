@@ -1,55 +1,70 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: N/A → 1.0.0
+Modified principles: N/A (new constitution)
+Added sections: All sections added based on project requirements
+Removed sections: None
+Templates requiring updates: N/A (first version)
+Follow-up TODOs: None
+-->
+# Meeru-72-fx Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Spec-Driven Development (NON-NEGOTIABLE)
+All development follows the specification-first approach with 100% adherence to the documented requirements. No deviations from the spec are allowed without formal amendment. This ensures predictability, reduces scope creep, and maintains alignment between stakeholder expectations and delivered features.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Premium Quality & Trust-Building Design
+Every aspect of the application must embody ultra-premium, luxurious design with black, gold, and emerald/teal color scheme. The interface must instill trust and confidence in users. All animations, interactions, and visual elements contribute to a professional binary & forex trading experience that feels expensive and reliable.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Mobile-First Responsive Approach
+Development begins with mobile implementation, ensuring buttery-smooth animations and optimal performance across all device sizes. The responsive design adapts seamlessly to desktop views while maintaining the luxury aesthetic. All interactive elements are optimized for touch interfaces as the baseline.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Secure Authentication & Instant Communication
+Authentication systems must be simple yet secure, implemented with NextAuth.js supporting credentials and Google login. Account creation triggers instant branded welcome emails via Resend within 8 seconds. All authentication flows include proper validation, loading states, and toast notifications for optimal user experience.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Clean, Scalable Architecture
+The codebase follows clean Next.js 14 App Router patterns with TypeScript, Tailwind CSS, and Framer Motion. All styling uses Tailwind exclusively with no custom CSS. Components are modular, reusable, and maintainable. The architecture supports future expansion while maintaining performance and accessibility standards.
 
-### [PRINCIPLE_6_NAME]
+### Performance & Accessibility Excellence
+All pages achieve Lighthouse Performance ≥92 and Accessibility ≥95 scores. The application loads quickly, responds to user interactions immediately, and provides excellent UX for all users. Dark mode is the default with gold accents that pop against the black background, following accessibility contrast ratios.
 
+## Technical Constraints
 
-[PRINCIPLE__DESCRIPTION]
+### Tech Stack Requirements
+- Next.js 14 (App Router) with TypeScript
+- Tailwind CSS for all styling (no custom CSS)
+- Framer Motion for animations
+- NextAuth.js for authentication (credentials + Google)
+- Resend for welcome emails with branded templates
+- Deployment on Vercel with custom domain capability
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### Development Standards
+- All forms must include validation, loading indicators, and toast notifications
+- Code follows TypeScript best practices with strict typing
+- Zero linting errors or warnings allowed
+- All components are tested for responsiveness across mobile, tablet, and desktop
+- Proper error handling and graceful degradation implemented
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+## Development Workflow
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### Feature Implementation Process
+- All features begin with detailed specifications in spec files
+- Implementation follows the sequence: Header → Hero → About → Services → Contact → Footer
+- Social media integration for WhatsApp, Facebook, YouTube, Instagram, and Telegram
+- Core functionality (signup/login/dashboard) implemented with proper authentication guards
+- Testing includes form validation, authentication flows, and email delivery
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Quality Gates
+- All code must pass TypeScript compilation
+- Lighthouse scores must meet minimum requirements (Performance ≥92, Accessibility ≥95)
+- All forms validated with proper error handling
+- Email delivery tested and confirmed working
+- Cross-browser compatibility verified
+- Mobile responsiveness verified on multiple screen sizes
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+The constitution serves as the definitive guide for all development decisions. All team members must adhere to these principles. Any proposed changes to the constitution must be documented, reviewed, and formally approved. Compliance is verified during code reviews and testing phases. The constitution supersedes any conflicting practices or preferences.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-12 | **Last Amended**: 2025-12-12

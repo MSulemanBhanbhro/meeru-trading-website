@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.specify/scripts/powershell/create-new-feature.ps1 -Json \"Meeru-72-fx Website (MVP)\n\n**Target Audience**  \nAspiring & pro traders (18+) seeking premium binary/forex signals, mentoring & community\n\n**Focus**  \nLuxury, trust-building single-page website with smooth animations + simple auth\n\n**Success Criteria**  \n- All 6 sections live & animated (Header, Hero, About, Skills/Services, Contact, Footer)  \n- Signup → branded welcome email via Resend in <8s  \n- Login works (protected route)  \n- Fully responsive + dark mode + 92+ Lighthouse score  \n- Deployed on Vercel, looks \"bhai premium hai ye\"  \n- Zero console errors or broken flows  \n\n**Constraints**  \n- Stack: Next.js 14 (App Router), Tailwind, Framer Motion, TypeScript, NextAuth/Clerk, Resend  \n- Timeline: MVP ready in ≤3 weeks  \n- No database, no payments, no live charts  \n- Free tools only  \n\n**Not Building**  \n- Real trading platform or signals dashboard  \n- User profiles/analytics  \n- Payment gateway  \n- Mobile app  \n- SEO or multi-language\" -Number 1 -ShortName \"meeru-website\")",
+      "Bash(dir .specify/scripts /s)",
+      "Bash(dir .specifyscriptspowershell)",
+      "Bash(dir \".specify\\scripts\\powershell\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/check-prerequisites.ps1\" -Json -PathsOnly)",
+      "Bash(npx create-next-app@latest . --ts --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)",
+      "Bash(npm install --legacy-peer-deps)",
+      "Bash(dir /s)",
+      "Bash(Get-ChildItem -Recurse)",
+      "Bash(rm -rf app/auth)",
+      "Bash(rm -rf components/auth)",
+      "Bash(npm run dev)"
+    ]
+  }
+}
