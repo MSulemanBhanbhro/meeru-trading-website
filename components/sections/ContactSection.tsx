@@ -285,17 +285,17 @@ export const ContactSection = () => {
                 className="bg-dark-700 rounded-xl p-6 border border-dark-600"
               >
                 <h4 className="text-lg font-semibold text-white mb-4">Business Hours</h4>
-                <ul className="space-y-2 text-gray-400">
-                  <li className="flex justify-between">
-                    <span>Monday - Friday</span>
+                <ul className="space-y-3 text-gray-400">
+                  <li className="flex flex-col sm:flex-row justify-between gap-1 sm:gap-0">
+                    <span className="font-medium">Monday - Friday</span>
                     <span>9:00 AM - 12:00 PM</span>
                   </li>
-                  <li className="flex justify-between">
-                    <span>Saturday</span>
+                  <li className="flex flex-col sm:flex-row justify-between gap-1 sm:gap-0">
+                    <span className="font-medium">Saturday</span>
                     <span>10:00 AM - 11:00 PM</span>
                   </li>
-                  <li className="flex justify-between">
-                    <span>Sunday</span>
+                  <li className="flex flex-col sm:flex-row justify-between gap-1 sm:gap-0">
+                    <span className="font-medium">Sunday</span>
                     <span>Closed</span>
                   </li>
                 </ul>

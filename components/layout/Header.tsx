@@ -52,6 +52,19 @@ export const Header = () => {
                 className={`font-medium transition-colors hover:text-primary-500 ${
                   pathname === link.path ? 'text-primary-500' : 'text-white'
                 }`}
+                onClick={(e) => {
+                  // For anchor links, smooth scroll to section
+                  if (link.path.startsWith('#')) {
+                    e.preventDefault();
+                    const element = document.querySelector(link.path);
+                    if (element) {
+                      element.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                      });
+                    }
+                  }
+                }}
               >
                 {link.name}
               </Link>
@@ -89,15 +102,30 @@ export const Header = () => {
             transition={{ duration: 0.3 }}
             className="md:hidden bg-dark-900/95 backdrop-blur-md"
           >
-            <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+            <div className="container mx-auto px-4 py-4 flex flex-col space-y-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   href={link.path}
-                  className={`py-3 font-medium transition-colors hover:text-primary-500 ${
+                  className={`py-4 px-2 font-medium transition-colors hover:text-primary-500 ${
                     pathname === link.path ? 'text-primary-500' : 'text-white'
                   }`}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    setIsMobileMenuOpen(false);
+                    // For anchor links, smooth scroll to section after menu closes
+                    if (link.path.startsWith('#')) {
+                      e.preventDefault();
+                      setTimeout(() => {
+                        const element = document.querySelector(link.path);
+                        if (element) {
+                          element.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                          });
+                        }
+                      }, 300); // Wait for menu animation to complete
+                    }
+                  }}
                 >
                   {link.name}
                 </Link>

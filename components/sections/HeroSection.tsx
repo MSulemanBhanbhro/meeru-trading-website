@@ -36,8 +36,9 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
+            className="flex flex-col sm:flex-row gap-4"
           >
-            <button className="px-8 py-4 bg-primary-500 text-white rounded-lg text-lg font-semibold hover:bg-primary-600 transition-colors shadow-lg shadow-primary-500/20 mr-4">
+            <button className="px-8 py-4 bg-primary-500 text-white rounded-lg text-lg font-semibold hover:bg-primary-600 transition-colors shadow-lg shadow-primary-500/20">
               Get Started
             </button>
             <button className="px-8 py-4 bg-transparent border-2 border-secondary-500 text-secondary-500 rounded-lg text-lg font-semibold hover:bg-secondary-500/10 transition-colors">
