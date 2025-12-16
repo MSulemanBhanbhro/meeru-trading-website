@@ -23,7 +23,7 @@ export const FloatingWhatsAppButton = () => {
     <>
       {isVisible && (
         <Link
-          href="https://wa.me/923172290146"
+          href="https://wa.me/923089027272"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 rounded-full bg-green-500 hover:bg-green-600 shadow-lg transition-all duration-300 transform hover:scale-110 animate-bounce"

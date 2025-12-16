@@ -247,7 +247,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-1">Phone</h4>
-                    <p className="text-gray-400">+1 (555) 123-4567</p>
+                    <p className="text-gray-400">03089027272</p>
                   </div>
                 </div>
 
@@ -259,11 +259,11 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-1">Email</h4>
-                    <p className="text-gray-400">support@meeru-72-fx.com</p>
+                    <p className="text-gray-400">support@meeru-72-fx@gmail.com</p>
                   </div>
                 </div>
 
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <div className="w-12 h-12 rounded-full bg-primary-500/20 flex items-center justify-center mr-4 flex-shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -274,7 +274,7 @@ export const ContactSection = () => {
                     <h4 className="text-lg font-semibold text-white mb-1">Office</h4>
                     <p className="text-gray-400">123 Trading Street, Finance District<br />New York, NY 10001</p>
                   </div>
-                </div>
+                </div> */}
               </motion.div>
 
               <motion.div
